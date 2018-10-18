@@ -1,0 +1,40 @@
+This directory contains the Friends & Enemies example.  Here are the
+contents of this directory:
+
+    friends_enemies.py            <== initial specification of friends & 
+                                      enemies
+                         
+    friends_enemies_full.py       <== specification of friends & enemies
+				      with Z and X enemies
+          
+    friends_enemies_zx_friends.py <== specification of friends & enemies
+                                      with Z and X friends
+
+Issue this command to run the initial demo:
+
+    $ python3 friends_enemies.py
+
+The demo program uses the Ocean API's dimod package, and the ExactSolver()
+method inside dimod. The QUBO is expressed as a Q matrix, and then it is
+run with ExactSolver(). The results are printed out.
+
+Check that the results are the same as presented in the slides.
+The energy is different. This is because we programmed the problem as a 
+minimization problem instead of maximization.
+
+Consider some questions:
+
+--> Do we get the expected number of solutions?
+--> Do the energies make sense? (Remind yourself that we changed the signs)
+
+Then run the second program, to see what happens if Z and X are programmed
+to be enemies. 
+
+--> Do we get the correct 4 point total, in our solution? If so, how many
+    times? Do the solutions seem correct?
+
+Finally, run the third program, to see what happens if Z and X are programmed
+to be friends.
+
+--> Do we get any four-point solutions? Why or why not?
+--> Can you think of any four-point solutions?
